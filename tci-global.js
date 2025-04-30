@@ -24,8 +24,8 @@
     link.rel    = 'stylesheet';
     link.href   = href;
     link.media  = 'all';
-    link.onload = () => console.log(`✅ CSS loaded: ${href}`);
-    link.onerror= () => console.error(`❌ CSS failed: ${href}`);
+    link.onload = () => console.log(`CSS loaded: ${href}`);
+    link.onerror= () => console.error(`CSS failed: ${href}`);
     document.head.appendChild(link);
   }
 
@@ -33,8 +33,8 @@
     const script      = document.createElement('script');
     script.src        = src;
     script.defer      = true;
-    script.onload     = () => console.log(`✅ JS loaded: ${src}`);
-    script.onerror    = () => console.error(`❌ JS failed: ${src}`);
+    script.onload     = () => console.log(`JS loaded: ${src}`);
+    script.onerror    = () => console.error(`JS failed: ${src}`);
     document.body.appendChild(script);
   }
 
